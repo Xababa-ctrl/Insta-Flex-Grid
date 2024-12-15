@@ -34,12 +34,13 @@ button{
 .grid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    grid-template-rows: 1fr 0.1fr 0.3fr 0.1fr 1fr 1fr;
+    gap: 30px;
     margin: 30px;
+    padding: 30px;
 }
 .g1{
-    grid-row: 1/3;
+    grid-row: 1/4;
     grid-column: 1/2;
     text-align: left;
 }
@@ -49,26 +50,34 @@ button{
 }
 .g3{
     grid-row: 2/3;
-    grid-column: 2/5;
+    grid-column: 2/3;
 }
 .g4{
-    grid-row: 1/2;
-    grid-column: 2/3;
+    grid-row: 3/4;
+    grid-column: 2/5;
 }
 .g5{
-    grid-row: 1/2;
-    grid-column: 3/4;
-}
-.g6{
-    grid-row: 1/3;
-    grid-column: 4/5;
-}
-.g7{
-    grid-row: 2/3;
+    grid-row: 4/5;
     grid-column: 2/3;
 }
+.g6{
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+.g7{
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
 .g8{
-    grid-row: 2/3;
+    grid-row: 5/7;
+    grid-column: 4/5;
+}
+.g9{
+    grid-row: 6/7;
+    grid-column: 2/3;
+}
+.g10{
+    grid-row: 6/7;
     grid-column: 3/4;
 }
 h2{
@@ -77,6 +86,7 @@ h2{
 #stories{
     justify-content: space-between;
     align-items:center;
+    gap: 20px;
 }
 h3{
     font-size: 22px;
@@ -101,13 +111,13 @@ footer{
 }
 .gridimg{
     width:100%;
-    height:auto;
+    height:100%;
 }
 .textspace{
     justify-content: space-evenly;
 }
 .padleft{
-    padding-left: 20%;
+    padding-left: 15%;
 }
 .textcenter{
     text-align: center;
