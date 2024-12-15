@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 1 du Projet</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <img src="images/logo-icone/Insta Noir.png" alt="logo-icone">
+        <div class="logo">
+            <img src="images/logo-icone/Insta Noir.png" alt="logo-icone">
+        </div>
+
         <nav class="navbar">
-            <ul class="nav-links">
+            <ul>
               <li><a href="#">Accueil</a></li>
               <li><a href="#">Découvrir</a></li>
               <li><a href="#">Reels</a></li>
@@ -21,18 +22,22 @@
               <li><a href="#">Notification</a></li>
               <li><a href="#">Stories</a></li>
               <li><a href="#">Profil</a></li>
-              <li><img src="images/Images manquantes/searchbar.png"></li>
-              <li><img src="images/Images manquantes/btn.png"></li>
             </ul>
-          </nav>
+        </nav>
+
+        <div class="search">
+            <img src="images/Images manquantes/searchbar.png" class="searchbar-rond">
+            <img src="images/Images manquantes/btn.png"class="btn-creer">
+        </div>
 
     </header>
 
     <section class="story">
-        <h2>Pour vous - Suivi(e)</h2>
+        <h2 class="pour">Pour vous <span class="suivi">- Suivi(e)</span></h2>
+
         <div class="grid-de-story">
             <div class="story">
-                <img src="images/stories/stories-icone-1.png">
+                <img src="images/stories-icone-1-1.png">
             </div>
             <div class="story">
                 <img src="images/stories/stories-icone-2.png">
@@ -53,25 +58,63 @@
                 <img src="images/stories/stories-icone-7.png">
             </div>
         </div>
-    <main class="main-container">
-        <h2> Actualité </h2>
-        <div class="actu-grid-premier">
-            <img src="images/actualités/actu-photo-1.png">
+    </section>
+
+    
+    
+    <h2> Actualité </h2>
+    <main class="contenu">
+        
+        <section class="actualites">
+            <div class="photo photo1">
+                <img src="images/actualités/actu-photo-1.png" alt="Photo 1">
+                <img src="images/Suggestion/suggestions-item-1.png" alt="rue fille" class="username">
+            </div>
+            <div class="photo photo2">
+                <img src="images/actualités/actu-photo-2.png" alt="Photo 2">
+                <img src="images/Suggestion/suggestions-item-2.png" alt="fille colore" class="username">
+            </div>
+            <div class="photo photo3">
+                <img src="images/actualités/actu-photo-3.png" alt="Photo 3">
+                <img src="images/Suggestion/suggestions-item-4.png" alt="montgolfiere" class="username">
+            </div>
+            <div class="photo photo4">
+                <img src="images/actualités/actu-photo-4.png" alt="Photo 4">
+                <img src="images/Suggestion/suggestions-item-3.png" alt="homme bateau" class="username">
+            </div>
+        </section>
+
+
+    <main class="suggestions">
+        <h2 class="titre">Suggestion</h2>
+        <div class="suggestion">
+            <img src="images/Suggestion/suggestions-item-1.png" alt="utilisateur bobo">
         </div>
-        <div class="actu-grid-deuxième">
-            <img src="images/actualités/actu-photo-2.png">
+        <div class="suggestion">
+            <img src="images/Suggestion/suggestions-item-2.png" alt="utilisateur cheveu">
         </div>
-        <div class="actu-grid-trosieme">
-            <img src="images/actualités/actu-photo-3.png">
+        <div class="suggestion">
+            <img src="images/Suggestion/suggestions-item-3.png" alt="utilisateur lulu">
         </div>
-        <div class="actu-grid-quatrieme">
-            <img src="images/actualités/actu-photo-4.png">
+        <div class="suggestion">
+            <img src="images/Suggestion/suggestions-item-4.png" alt="utilisateur barbapapa">
         </div>
     </main>
+</main>
+
+
+
+    
+
+
+
+
 
     <footer>
-    <p>Meta verified © 2024 Instagram par Meta</p>
-
+        <div class="espace">
+            <span>Meta verified </span>
+            <span>© 2024 Instagram par Meta</span>
+        </div>
     </footer>
 </body>
 </html>
