@@ -12,23 +12,43 @@
 <body>
     <header>
         <nav id="navbar" class="flex">
-            <div><img src="images/logo-icone/Insta Noir.png" alt="Insta"></div>
-            <a href="index.html">Accueil</a>
-            <a href="">Découvrir</a>
-            <a href="">Reels</a>
-            <a href="">Messages</a>
-            <a href="">Notifications</a>
-            <a href="">Stories</a>
-            <a href="index2.html"><b>Profil</b></a>
+            <div>
+                <img id="logo" src="images/logo-icone/Insta Noir.png" alt="Insta">
+            </div>
+            <!-- menu burger pour le responsive -->
+            <div class="menuBurger" id="burger">
+                <div class="ligne"></div>
+                <div class="ligne"></div>
+                <div class="ligne"></div>
+            </div>
+            <!-- icône pour le menu burger en responsive -->
+            <div  id="iconeProfil" class="center">
+                <img src="images/profil/sidebar-profil-icone.png" alt="icone du profil">
+                <h3>Jean Robinet</h3>
+                <p>@jean_lebarbu</p>
+            </div>
+            <!-- liens de navigation -->
+            <a class="navLinks" href="index.html">Accueil</a>
+            <a class="navLinks" href="#">Découvrir</a>
+            <a class="navLinks" href="#">Reels</a>
+            <a class="navLinks" href="#">Messages</a>
+            <a class="navLinks" href="#">Notifications</a>
+            <a class="navLinks" href="#">Stories</a>
+            <a class="navLinks" href="index2.html"><b>Profil</b></a>
+            
             <input type="image" src="images/logo-icone/searchbar.png">
-            <button><img src="images/logo-icone/btn.png" alt="Créer"></button>
+            <button>
+                <img src="images/logo-icone/btn.png" alt="Créer">
+            </button>
+
+            
             
         </nav>
     </header>
     
     
     <main>
-        <section class="grid">
+        <section id="main" class="grid">
             <div class="g1">
                     <div>
                         <img class="gridimg" src="images/profil/photo-profil.png" alt="photo de profil">
@@ -36,13 +56,13 @@
             <br>    
                 
             <div class="textcenter">
-                        <h3>Jean Robinet &nbsp; &nbsp;<img src="images/logo-icone/Icone parametres.png" alt=""></h3>
+                        <h3>Jean Robinet &nbsp; &nbsp;<img src="images/logo-icone/Icone parametres.png" alt="paramètres"></h3>
                 <p>@jean_lebarbu</p>
             </div>
                 <br>
-            <div class="padleft">
+            <div id="texteProfil">
                 <p>
-                    Salut, je m'appelle Jean et <br> j'adore capturer le monde tel <br> qu'il est. Je suis designer <br> freelance basé à Paris.
+                    Salut, je m'appelle Jean et j'adore capturer le monde tel qu'il est. Je suis designer freelance basé à Paris.
                 </p>
             </div>
                 <br>
@@ -63,7 +83,7 @@
                 
             </div>
             <div class="g2">
-                <img class="gridimg" src="images/profil/accuel-banner.png" alt="">
+                <img class="gridimg hauto" src="images/profil/accuel-banner.png" alt="bannière d'accueil">
             </div>
             
             <div class="g3">
@@ -72,19 +92,19 @@
             <div class="g4 flex" id="stories">
                 
                 <div>
-                    <img src="images/stories/stories-icone-1.png" alt="">
+                    <img src="images/stories/stories-icone-1.png" alt="icone stories 1">
                 </div>
                 <div>
-                    <img src="images/stories/stories-icone-2.png" alt="">
+                    <img src="images/stories/stories-icone-2.png" alt="icone stories 2">
                 </div>
                 <div>
-                    <img src="images/stories/stories-icone-3.png" alt="">
+                    <img src="images/stories/stories-icone-3.png" alt="icone stories 3">
                 </div>
                 <div>
-                    <img src="images/stories/stories-icone-4.png" alt="">
+                    <img class="stories4" src="images/stories/stories-icone-4.png" alt="icone stories 4">
                 </div>
                 <div>
-                    <img src="images/stories/stories-icone-5.png" alt="">
+                    <img class="stories5" src="images/stories/stories-icone-5.png" alt="icone stories 5">
                 </div>
             </div>
         

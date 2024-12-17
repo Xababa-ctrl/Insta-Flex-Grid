@@ -6,21 +6,22 @@
     max-width: 1920px;
     min-height: auto;
 }
-body{
-    padding: 30px;
-}
+
 .flex{
     display:flex;
     justify-content: center;
     align-items: center;
 }
-.p20{
-    padding: 20px;
-}
 #navbar{
-    justify-content:space-evenly;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    justify-content:space-between;
+    padding:4%;
+}
+.center{
+    justify-items: center;
+    flex-direction: column;
+}
+#iconeProfil{
+    display: none;
 }
 nav a{
     text-decoration: none;
@@ -31,13 +32,23 @@ button{
     border: none;
     background: none;
 }
+.menuBurger{
+    display: none;
+    cursor: pointer;
+}
+.menuBurger .ligne{
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+
 .grid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.1fr 0.3fr 0.1fr 1fr 1fr;
     gap: 30px;
-    margin: 30px;
-    padding: 30px;
+    padding: 4%;
 }
 .g1{
     grid-row: 1/4;
@@ -93,7 +104,6 @@ h3{
 }
 h4{
     font-size: 20px;
-
 }
 p{
     font-size: 18px;
@@ -102,12 +112,14 @@ p{
 footer{
     background: rgb(31, 43, 56);
     color:white;
-    padding: 50px;
+    padding: 4%;
     gap: 20px;
 }
 .textefooter{
     justify-content: space-between;
-    font-weight: bold;
+}
+footer p{
+    font-weight: 500;
 }
 .gridimg{
     width:100%;
@@ -116,9 +128,54 @@ footer{
 .textspace{
     justify-content: space-evenly;
 }
-.padleft{
-    padding-left: 15%;
-}
 .textcenter{
     text-align: center;
+}
+#texteProfil{
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.hauto{
+    height: auto;
+}
+@media(max-width: 1000px){
+    nav a{
+        display: none;
+    }
+    input, button{
+        display: none;
+    }
+    nav{
+        background: rgb(31, 43, 56);
+        width: 100%;
+    }
+    nav #logo{
+        content: url(images/logo-icone/Insta\ Blanc.png);
+    }
+    .menuBurger{
+        display: block;
+    }
+    #texteProfil{
+        text-align: left;
+        max-width: 100%;
+    }
+    .stories4, .stories5{
+        display: none;
+    }
+    #stories{
+        justify-content: center space-between;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .g10{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+    }
+    
 }
