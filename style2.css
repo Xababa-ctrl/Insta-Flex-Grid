@@ -181,7 +181,9 @@ footer p{
         display: none;
     }
     #stories{
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 50px;
+        padding-left: 25%;
     }
     #main{
         display: flex;
