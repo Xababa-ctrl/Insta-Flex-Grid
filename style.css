@@ -21,6 +21,18 @@ header {
     padding: 15px 70px;
 }
 
+.menuBurger {
+    display: none;
+    cursor: pointer;
+}
+
+.menuBurger .ligne {
+    width: 35px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+
 .logo {
     width: auto;
     height: 40px;
@@ -36,7 +48,6 @@ header {
 .navbar a {
     text-decoration: none;
     color: black;
-    font-weight: 300;
     size: 20px;
     line-height: 8;
     font-family: "Roboto", sans-serif;
@@ -62,22 +73,13 @@ header {
     
 }
 
-.menuBurger {
-    display: none;
-    cursor: pointer;
+.creation {
+    display:none;
 }
 
-.menuBurger .ligne {
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin: 5px;
-
-}
 
 .pour {
     margin-bottom:10px;
-    font-family: "Roboto", sans-serif;
 }
 
 h2 {
@@ -97,11 +99,10 @@ h2 .suivi {
     font-family: "Roboto", sans-serif;
 }
 
+
 .grid-de-story {
     display: flex;
-    justify-content: flex-start;
-    overflow-x: auto;
-    gap: 82px;
+    gap: 80px;
     margin-top: 20px;
     margin-left: 70px;
     margin-bottom: 30px;
@@ -111,7 +112,7 @@ h2 .suivi {
 .contenu {
     display: grid;
     grid-template-columns: 3fr 2fr; 
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
 }
 
@@ -120,7 +121,7 @@ h2 .suivi {
     grid-template-areas:
         "photo1 photo2 photo3"
         "photo4 photo4 photo3";
-    gap: 30px;
+    gap: 25px;
     margin: 30px;
     padding: 30px;
     margin-top: auto;
@@ -147,11 +148,6 @@ h2 .suivi {
     border-radius: 10px;
     object-fit: cover; 
     display: block;
-   
-}
-
-.username {
-    margin-top: 5px; 
 }
 
 .suggestions {
@@ -175,7 +171,6 @@ h2 .suivi {
     margin-top: 10px;
 }
 
-
 footer {
     text-align:center;
     padding-top: 40px;
@@ -194,10 +189,15 @@ footer {
     align-items: center;
 }
 
-@media (max-width: 768px) {
+.espace-deux {
+    display: none;
+}
+
+
+@media (max-width: 793px) {
 
 body {
-    width: 100%;
+    width: auto;
     overflow-x: hidden;
     margin:0;
     padding:0;
@@ -206,9 +206,32 @@ body {
 header {
     flex-direction: column;
     align-items:flex-start;
-    padding: 10px;
+    padding: 30px;
     background-color: #1E2A37;
 }
+
+.menuBurger {
+    display: block;
+    position: absolute;
+    right: 10px;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left:30px; 
+}
+
+header .search {
+    display:none;
+}
+.creation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
 
 .logo img {
     content: url("images/logo-icone/Insta\ Blanc.png");
@@ -216,19 +239,32 @@ header {
 
 .searchbar-rond{
     content: url("images/searchbar\ deuxième\ ver.png");
+    width: 60%;
+    height: auto;
+    object-fit: contain;
 }
 
 .btn-creer{
     content: url("images/btn\ deuxième\ ver.png");
+    width: 30%;
+    height: auto;
+    object-fit: contain;
 }
 
 .navbar a {
     display: none;
 }
 
-.menuBurger{
-    display:block;
-    
+.lunette {
+    width: 150px;
+}
+
+.cheveux {
+    width: 150px;
+}
+
+.marron {
+    width:150px;
 }
 
 .barbe {
@@ -246,13 +282,31 @@ header {
 .rouge {
     display: none;
 }
-    
+
+.pour {
+    margin-left: 40px;
+}
+
+.section .story {
+    object-fit: contain;
+
+}
+
+.grid-de-story {
+    display: flex;
+    gap: 60px;
+    margin-left: 40px;
+}
+
+
+.actu {
+    margin-left: 40px;
+}
 
 .contenu {
     display: flex;
     flex-direction: column;
     grid-template-columns: 1fr;
-    padding: 10px;
 }
 
 .actualites {
@@ -264,29 +318,24 @@ header {
 }
 
 .photo img {
-    width: 80%; 
+    width: 100%; 
     object-fit:contain;
-    height: auto;
-    
 }
 
-section {
-    margin: 20px auto;
-}
 .suggestions {
     display: none;
 }
 
 footer {
-    font-size: 22px; 
-    padding: 10px;
-
+    font-size:10px 1em 22px;
+    padding: 35px;
 }
 
 .espace {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
+    display: none;
 }
 
+.espace-deux {
+    display:block;
+}
+}
