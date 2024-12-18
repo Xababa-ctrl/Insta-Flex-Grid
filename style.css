@@ -193,10 +193,11 @@ footer {
     display: none;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 793px) {
 
 body {
-    width: 100%;
+    width: auto;
     overflow-x: hidden;
     margin:0;
     padding:0;
@@ -238,18 +239,32 @@ header .search {
 
 .searchbar-rond{
     content: url("images/searchbar\ deuxième\ ver.png");
-    width: auto;
+    width: 60%;
     height: auto;
+    object-fit: contain;
 }
 
 .btn-creer{
     content: url("images/btn\ deuxième\ ver.png");
-    width: auto;
+    width: 30%;
     height: auto;
+    object-fit: contain;
 }
 
 .navbar a {
     display: none;
+}
+
+.lunette {
+    width: 150px;
+}
+
+.cheveux {
+    width: 150px;
+}
+
+.marron {
+    width:150px;
 }
 
 .barbe {
@@ -267,24 +282,31 @@ header .search {
 .rouge {
     display: none;
 }
-    
+
+.pour {
+    margin-left: 40px;
+}
+
+.section .story {
+    object-fit: contain;
+
+}
+
+.grid-de-story {
+    display: flex;
+    gap: 60px;
+    margin-left: 40px;
+}
+
+
+.actu {
+    margin-left: 40px;
+}
 
 .contenu {
     display: flex;
     flex-direction: column;
     grid-template-columns: 1fr;
-}
-
-.grid-de-story {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5px;
-}
-
-.story {
-    display: flex;
-    flex-direction: column;
 }
 
 .actualites {
@@ -298,7 +320,6 @@ header .search {
 .photo img {
     width: 100%; 
     object-fit:contain;
-    height: auto;
 }
 
 .suggestions {
@@ -318,4 +339,3 @@ footer {
     display:block;
 }
 }
-
