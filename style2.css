@@ -6,11 +6,24 @@
     max-width: 1920px;
     min-height: auto;
 }
-
+.fondGris{
+    background: rgb(245, 247, 250);
+}
+.fondBlanc{
+    background: white;
+}
+.relative{
+    position: relative;
+}
 .flex{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+.flex2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 #navbar{
     justify-content:space-between;
@@ -37,10 +50,14 @@ button{
     cursor: pointer;
 }
 .menuBurger .ligne{
-    width: 25px;
-    height: 3px;
+    width: 30px;
+    height: 4px;
     background: white;
     margin: 5px;
+}
+.profil{
+    padding: 1%;
+    position: absolute;
 }
 
 .grid{
@@ -164,12 +181,11 @@ footer p{
         display: none;
     }
     #stories{
-        justify-content: center space-between;
+        justify-content: space-evenly;
     }
     #main{
         display: flex;
         flex-direction: column;
-        align-items: stretch;
     }
     .g10{
         display: none;
