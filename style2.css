@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    max-width: 1920px;
+    min-height: auto;
+}
+.fondGris{
+    background: rgb(245, 247, 250);
+}
+.fondBlanc{
+    background: white;
+}
+.relative{
+    position: relative;
+}
+.flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#navbar{
+    justify-content:space-between;
+    padding:4%;
+}
+.center{
+    justify-items: center;
+    flex-direction: column;
+}
+#iconeProfil{
+    display: none;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+}
+button{
+    border: none;
+    background: none;
+}
+.menuBurger{
+    display: none;
+    cursor: pointer;
+}
+.menuBurger .ligne{
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 5px;
+}
+.profil{
+    padding: 1%;
+    position: absolute;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr 0.3fr 0.1fr 1fr 1fr;
+    gap: 30px;
+    padding: 4%;
+}
+.g1{
+    grid-row: 1/4;
+    grid-column: 1/2;
+    text-align: left;
+}
+.g2{
+    grid-row: 1/2;
+    grid-column: 2/5;
+}
+.g3{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.g4{
+    grid-row: 3/4;
+    grid-column: 2/5;
+}
+.g5{
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+.g6{
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+.g7{
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+.g8{
+    grid-row: 5/7;
+    grid-column: 4/5;
+}
+.g9{
+    grid-row: 6/7;
+    grid-column: 2/3;
+}
+.g10{
+    grid-row: 6/7;
+    grid-column: 3/4;
+}
+h2{
+    font-size: 30px; 
+}
+#stories{
+    justify-content: space-between;
+    align-items:center;
+    gap: 20px;
+}
+h3{
+    font-size: 22px;
+}
+h4{
+    font-size: 20px;
+}
+p{
+    font-size: 18px;
+    font-weight: 300;
+}
+footer{
+    background: rgb(31, 43, 56);
+    color:white;
+    padding: 4%;
+    gap: 20px;
+}
+.textefooter{
+    justify-content: space-between;
+}
+footer p{
+    font-weight: 500;
+}
+.gridimg{
+    width:100%;
+    height:100%;
+}
+.textspace{
+    justify-content: space-evenly;
+}
+.textcenter{
+    text-align: center;
+}
+#texteProfil{
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.hauto{
+    height: auto;
+}
+@media(max-width: 1000px){
+    nav a{
+        display: none;
+    }
+    input, button{
+        display: none;
+    }
+    nav{
+        background: rgb(31, 43, 56);
+        width: 100%;
+    }
+    nav #logo{
+        content: url(images/logo-icone/Insta\ Blanc.png);
+    }
+    .menuBurger{
+        display: block;
+    }
+    #texteProfil{
+        text-align: left;
+        max-width: 100%;
+    }
+    .stories4, .stories5{
+        display: none;
+    }
+    #stories{
+        justify-content: center;
+        gap: 50px;
+        padding-left: 25%;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+    .g10{
+        display: none;
+    }
+    footer{
+        flex-direction: column;
+    }
+    
+}
